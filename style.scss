@@ -28,6 +28,14 @@ html {
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
+
+    &.bg-danger {
+      background: red;
+    }
+
+    &.bg-warning {
+      background: yellow;
+    }
   }
 
   &__dropzone {

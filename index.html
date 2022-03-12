@@ -8,15 +8,24 @@
 <div class="example__parent">
 
     <div class="example__origin">
-        <div id="draggable-1" class="example__draggable" draggable="true">
+        <div id="draggable-1" class="example__draggable" draggable="true" ondragstart="onDragStart(event)" >
             draggable
+        </div>
+
+        <div id="draggable-2" class="example__draggable bg-warning" draggable="true" ondragstart="onDragStart(event)" >
+            draggable two
+        </div>
+
+        <div id="draggable-3" class="example__draggable bg-danger" draggable="true" ondragstart="onDragStart(event)" >
+            draggable three
         </div>
     </div>
 
-    <div class="example__dropzone">
+    <div class="example__dropzone" ondragover="onDragOver(event)" ondrop="onDrop(event)" >
         dropzone
     </div>
 </div>
 
+<script src="./main.js"></script>
 </body>
 </html>
